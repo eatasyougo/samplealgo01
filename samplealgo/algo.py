@@ -3,7 +3,6 @@ import pandas as pd
 import time
 import logging
 
-
 from .universe import Universe
 
 logger = logging.getLogger(__name__)
