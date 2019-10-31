@@ -76,7 +76,7 @@ def calc_scores(price_df, dayindex=-1):
     return sorted(diffs.items(), key=lambda x: x[1])
 
 
-def get_orders(api, price_df, position_size=100, max_positions=5):
+def get_orders(api, price_df, position_size=1000, max_positions=25):
     '''Calculate the scores within the universe to build the optimal
     portfolio as of today, and extract orders to transition from our
     current portfolio to the desired state.
